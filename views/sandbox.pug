@@ -1,0 +1,14 @@
+doctype html
+html(lang="en")
+  head
+    title #{title}
+  body
+    header
+        h1 #{title}
+    section#content
+        h2 Some names of friends:
+            each name in data
+                p= name.first + ' ' + name.last
+                
+    footer
+        p An app to help you study
